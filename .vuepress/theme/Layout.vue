@@ -12,7 +12,7 @@
         li.nav-item
           a(href='javascript:void(0)' class='nav-link disabled') About Me
         li.nav-item
-          a(href='/resume' class='nav-link') Professional Resume
+          a(href='/resume/' class='nav-link') Professional Resume
 
       .row
         article.lead.col-lg-8.offset-lg-2.col-xs-12(style='margin-top: 3rem; margin-bottom: 6rem')
