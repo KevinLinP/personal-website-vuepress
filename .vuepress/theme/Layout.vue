@@ -1,5 +1,7 @@
 <template lang="pug">
-  div
+  div(v-if="$page.frontmatter.layout")
+    component(:is="$page.frontmatter.layout")
+  div(v-else)
     .parallax-window(data-parallax data-src="https://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg" data-bleed="120" data-speed="0.63")
 
     .text-center
@@ -22,7 +24,7 @@
       img(src='https://ddw2ppmkywo9u.cloudfront.net/Flower_of_life-2level.svg' width=250 height=250 title='Flower of Life rendered by Tomruen' alt='Flower of Life')
 </template>
 
-<style>
+<style scoped>
   .parallax-window {
     min-height: 50vh;
     background: transparent;
